@@ -14,7 +14,7 @@ router.get("/users/:id", (req, res) => {
   if (retorno == 0) {
     return res.status(400).json({ error: "ID inválido." });
   }
-  res.status(200).json();
+  res.status(200).json(retorno);
 });
 
 router.post("/users", (req, res) => {
